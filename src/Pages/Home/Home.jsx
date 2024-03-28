@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import FdrAccountForm from "./Form";
 
 const Home = () => {
   return (
+    <>
     <div className="bg-gradient-to-br from-blue-500 to-blue-700 h-screen flex items-center justify-center">
       <div className="text-center text-white">
         <h1 className="text-4xl font-bold mb-4">Welcome to FDR Creation</h1>
-        <p className="text-lg mb-6">
+        <p className="text-lg mb-6 mx-2">
           Your premier destination for secure financial investments and wealth
           management services. At FDR Creation, we prioritize your financial
           goals and provide tailored solutions to help you achieve them. Whether
@@ -23,7 +25,9 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
+    <FdrAccountForm></FdrAccountForm>
+    </>
+      );
 };
 
 export default Home;
