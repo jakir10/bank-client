@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
-import Login from "../Pages/Login/Login";
-import About from "../Pages/About/About";
+import BankDashboard from "../Pages/Dashboard/BankDashboard ";
+import BangladeshBankDashbard from "../Pages/Dashboard/BangladeshBankDashbard";
+// import Login from "../Pages/Login/Login";
+// import About from "../Pages/About/About";
 
 export const router = createBrowserRouter([
   {
@@ -13,13 +15,21 @@ export const router = createBrowserRouter([
         path: "/home",
         element: <Home></Home>,
       },
+      // {
+      //   path: "/about",
+      //   element: <About></About>,
+      // },
+      // {
+      //   path: "/login",
+      //   element: <Login></Login>,
+      // },
       {
-        path: "/about",
-        element: <About></About>,
+        path: "/bankdashboard",
+        element: <BankDashboard></BankDashboard>,
       },
       {
-        path: "/login",
-        element: <Login></Login>,
+        path: "/bangladeshbankdashboard",
+        element: <BangladeshBankDashbard></BangladeshBankDashbard>,
       },
     ],
   },
